@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
@@ -14,10 +16,9 @@
     <h1  title="Hello" class="heading">
         Hello guys!
     </h1> -->
-
     <!-- <script>
-        //DOM
         const root = document.getElementById('root')
+        //DOM
         const h1DOM = document.createElement('h1')
 
         h1DOM.innerText = 'Hello guys!!'
@@ -38,8 +39,8 @@
             className: 'heading'
         }, 'Hello guys!')
 
-        console.dir(h1DOM)
-        console.log(h1React)
+            //React-DOM ->Render UI
+        ReactDOM.render(h1React, root)
     </script> -->
       
     <!-- Bài 2:
@@ -48,9 +49,8 @@
             <li>JavaScript</li>
             <li>ReactJS</li>
         </ul> -->
-
     <!-- <script>
-
+        root = document.getElementById('root')
         //DOM
         const ulDOM = document.createElement('ul') //ul:type
         ulDOM.id = 'ul-id'
@@ -61,12 +61,11 @@
 
         liDOM1.innerText = 'JavaScript'
         liDOM2.innerText = 'ReactJS'
-        
 
         ulDOM.appendChild(liDOM1)
         ulDOM.appendChild(liDOM2)
 
-        document.body.appendChild(ulDOM)
+        root.body.appendChild(ulDOM)
 
         //React
         //React.createElement(type, props, children)
@@ -79,8 +78,9 @@
             React.createElement('li', null, 'JavaScript'),
             React.createElement('li', null, 'ReactJS'),
         )
-        console.log(ulReact)
+        ReactDOM.render(ulReact, root)
     </script> -->
+
     <!-- Bài 3:
     Tạo html dưới bằng ReactJS theo 2 dạng: DOM và React:
     <div class= "post-item">
@@ -106,14 +106,53 @@
         console.log(divDOM)
 
         //React
+        const root = document.getElementById('root')
         const divReact = React.createElement (
             'div',
             className = "post-item",
             React.createElement('h2', title='Học Reacr tại F8', 'Học ReactJS' ),
             React.createElement('p', null, 'Học ReactJS từ cơ bản tới nâng cao' ),
         )
-        console.dir(divReact)
+        ReactDOM.render(divReact, root)
+
     </script> -->
 
+    <!-- Bài 4: JSX -->
+    <div id="root"></div>
+    <script>
+        const courses = [
+            {
+                name: "HTML, CSS"
+            },
+            {
+                name: "Responsive web design"
+            },
+            {
+                name: "ReactJS"
+            }
+        ]
+    </script>
+    <script type="text/balel">
+        const courses = [
+            {
+                name: 'HTML, CSS'
+            },
+            {
+                name: 'Responsive web design'
+            },
+            {
+                name: 'ReactJS'
+            }
+        ]
+        
+        const jsx = <ul>
+            {cou
+
+            }
+        </ul>
+
+        ReactDOM.render(jsx, root)
+
+    </script>
 </body>
 </html>
