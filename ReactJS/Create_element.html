@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Bài 1:
+    Tạo html dưới bằng ReactJS theo 2 dạng: DOM và React:
+    <h1  title="Hello" class="heading">
+        Hello guys!
+    </h1> -->
+
+    <!-- <script>
+        //DOM
+        const root = document.getElementById('root')
+        const h1DOM = document.createElement('h1')
+
+        h1DOM.innerText = 'Hello guys!!'
+        h1DOM.id = 'heading'
+        h1DOM.className = 'test'
+        //h1.style.color = 'color:green; font-size: 20px'
+        Object.assign (h1DOM.style, {
+            color: 'blue',
+            backgroundColor: '#333'
+        })
+
+        console.log(h1DOM)
+        root.appendChild(h1DOM)
+
+        //React
+        const h1React = React.createElement('h1',{
+            title: 'Hello',
+            className: 'heading'
+        }, 'Hello guys!')
+
+        console.dir(h1DOM)
+        console.log(h1React)
+    </script> -->
+      
+    <!-- Bài 2:
+    Tạo html dưới bằng ReactJS theo 2 dạng: DOM và React:
+        <ul>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+        </ul> -->
+
+    <!-- <script>
+
+        //DOM
+        const ulDOM = document.createElement('ul') //ul:type
+        ulDOM.id = 'ul-id'
+        ulDOM.style = 'color: red; font-size: 30px'
+        
+        const liDOM1 = document.createElement('li')
+        const liDOM2 = document.createElement('li')
+
+        liDOM1.innerText = 'JavaScript'
+        liDOM2.innerText = 'ReactJS'
+        
+
+        ulDOM.appendChild(liDOM1)
+        ulDOM.appendChild(liDOM2)
+
+        document.body.appendChild(ulDOM)
+
+        //React
+        //React.createElement(type, props, children)
+        const ulReact = React.createElement(
+            'ul', 
+            {
+                id = 'ul-id',
+                style = 'color:red; font-size:30px'
+            },
+            React.createElement('li', null, 'JavaScript'),
+            React.createElement('li', null, 'ReactJS'),
+        )
+        console.log(ulReact)
+    </script> -->
+    <!-- Bài 3:
+    Tạo html dưới bằng ReactJS theo 2 dạng: DOM và React:
+    <div class= "post-item">
+        <h2 title="Học Reacr tại F8">Học ReactJS</h2>
+        <p>Học ReactJS từ cơ bản tới nâng cao</p>
+    </div> -->
+    <!-- <script>
+        //DOM
+        const divDOM = document.createElement('div')
+        divDOM.title = "post-item"
+
+        const h2DOM = document.createElement('h2')
+        const pDOM = document.createElement('p')
+
+        h2DOM.title = 'Học Reacr tại F8'
+        h2DOM.innerText = 'Học ReactJS'
+        pDOM.innerText = 'Học ReactJS từ cơ bản tới nâng cao'
+
+        divDOM.appendChild(h2DOM)
+        divDOM.appendChild(pDOM)
+
+        document.body.appendChild(divDOM)
+        console.log(divDOM)
+
+        //React
+        const divReact = React.createElement (
+            'div',
+            className = "post-item",
+            React.createElement('h2', title='Học Reacr tại F8', 'Học ReactJS' ),
+            React.createElement('p', null, 'Học ReactJS từ cơ bản tới nâng cao' ),
+        )
+        console.dir(divReact)
+    </script> -->
+
+</body>
+</html>
