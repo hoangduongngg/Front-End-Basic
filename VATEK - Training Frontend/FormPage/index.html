@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Page</title>
+</head>
+<body>
+    <div>
+        <h2>Responsive Contact Section</h2>
+        <p>Contact page. </p>
+    </div>
+    <div class="container">
+        <header>
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </header>
+        <div class="row">
+            <div class="column">
+                <img 
+                src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/241182454_3028176997456992_7407799986800910299_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=AINrylHxXnEAX86rkln&_nc_ht=scontent.fhan5-8.fna&oh=c711c04ea5e893d26e94085c11c314fa&oe=61B49828"
+                width="100%"
+                >
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <div>
+                        <label for="fname">First Name </label>
+                        <input type="text" id="fname" placeholder="Your name...">
+                    </div>
+                    <div>
+                        <label for="lname" id="lname">Last Name </label>
+                        <input type="text" placeholder="Your last name...">
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="bacninh">Bac Ninh</option>
+                            <option value="hanoi">Ha Noi</option>
+                            <option value="saigon">Sai Gon</option>
+                        </select>
+                    </div>
+                    <!-- DOB -->
+                    <div >
+                        <label>DOB (dd/mm/yy)</label>
+                        <input style="width: 10%;" type="number">
+                        <select style="width: 10%;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <input style="width: 15%;" type="number">
+                    </div>
+                    <!-- Gender -->
+                    <div>
+                        <label>Gender</label>
+                        <select>
+                            <option>Male</option>
+                            <option>Famale</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <label for="subject">Subject</label>
+                    <textarea 
+                        name="subject" 
+                        id="subject" 
+                        cols="30" 
+                        rows="10"
+                        placeholder="Write something...">
+                    </textarea>
+                    <button>
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
