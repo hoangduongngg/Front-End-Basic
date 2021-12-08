@@ -31,9 +31,7 @@ input, select, textarea {
     margin-bottom: 15px;
     font-size: 15px;
 }
-.input small {
-    width: 20%;
-}
+
 
 textarea {
     /* chỉ thay đổi kích thước theo chiều dọc */
