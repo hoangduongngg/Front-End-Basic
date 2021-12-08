@@ -9,6 +9,7 @@ a {
     font-weight: 400;
     color: white;
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -37,11 +38,11 @@ a:hover {
 }
 .footer {
     background-color: #515151;
-    padding: 20px;
+    padding: 25px;
     color: white;
 }
 
-.footer a:hover {
+footer a:hover {
     color: black;
 }
 .row {
@@ -57,4 +58,7 @@ a:hover {
 .main {
     -ms-flex: 60%;
     flex: 60%;
+}
+.footer_icon {
+    margin-right: 10px;
 }
