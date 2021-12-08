@@ -44,41 +44,27 @@
                     </div>
                     <!-- DOB -->
                     <div >
-                        <label>DOB (dd/mm/yy)</label>
-                        <input style="width: 10%;" type="number">
-                        <select style="width: 10%;">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                        <input style="width: 15%;" type="number">
+                        <label>DOB (dd/mm/yy)</label> &nbsp;
+                        <input type="number" placeholder="01">
+                        <input type="number" placeholder="01">
+                        <input type="number" placeholder="2000">
                     </div>
-                    <!-- Gender -->
+
                     <div>
-                        <label>Gender</label>
-                        <select>
-                            <option>Male</option>
-                            <option>Famale</option>
-                            <option>Other</option>
-                        </select>
+                        <label for="gender">Gender:</label> &nbsp;
+                        Male<input type="radio" name="gender">  
+                        Famale<input type="radio" name="gender"> 
+                        Other <input type="radio" name="gender"> 
                     </div>
-                    <label for="subject">Subject</label>
-                    <textarea 
-                        name="subject" 
-                        id="subject" 
-                        cols="30" 
-                        rows="10"
-                        placeholder="Write something...">
-                    </textarea>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <textarea 
+                            placeholder="Write something..."
+                            name="subject" 
+                            id="subject" 
+                            >
+                        </textarea>
+                    </div>
                     <button>
                         Submit
                     </button>
