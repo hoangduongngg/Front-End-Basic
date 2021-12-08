@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Helvetica, sans-serif;
 }
@@ -61,4 +64,12 @@ footer a:hover {
 }
 .footer_icon {
     margin-right: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar a {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
 }
