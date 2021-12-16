@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: gray;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+.button_signin {
+    background-color: black;
+    color: white;
+    border-style: none;
+    /* padding: 10px 100px; */
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.form_container {
+    background-color: rgb(221, 221, 221);
+    padding: 20px;
+    max-width: 400px;
+    /* margin: 30px auto 0 auto; */
+    margin: 30px auto;
+}
+.form_row {
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+    /* max-width: 300px; */
+}
+.form_label {
+    min-width: 100px;
+}
+.form_input {
+    flex: 1;
+    padding: 10px 0;
+    border-style: none;
+}
