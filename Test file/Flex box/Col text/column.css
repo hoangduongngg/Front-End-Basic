@@ -17,11 +17,7 @@ p {
     flex:1;
     margin: 10px 20px;
 }
-.col_one {
-}
+
 .col_main {
     flex:2;
-}
-
-.col_two {
 }

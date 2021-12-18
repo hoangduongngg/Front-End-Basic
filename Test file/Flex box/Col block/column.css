@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.col_title {
+    font-size: 40px;
+}
+
+.col_container {
+    display: flex;
+    justify-content: space-around;
+    /* để khi màn hình nhỏ lại thì xuống dòng */
+    flex-wrap: wrap;
+}
+.col_item {
+    padding: 20px;
+    flex-basis: 25%;
+    background-color: #498f72;
+}
